@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home1.master.cs" Inherits="MasterEx.Home1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 1464px;
+            font-size: 90px;
+            background-color: #4B73CD;
+        }
+        .auto-style3 {
+            color: #FFFFCC;
+        }
+        .auto-style5 {
+            width: 317px;
+            background-color: #FF66CC;
+        }
+        .auto-style6 {
+            width: 317px;
+            background-color: #FF9966;
+        }
+        .auto-style7 {
+            width: 317px;
+            background-color: #FFCCCC;
+        }
+        .auto-style8 {
+            width: 100%;
+            height: 45px;
+        }
+        .auto-style9 {
+            background-color: #FFCCCC;
+        }
+        .auto-style10 {
+            background-color: #FF3399;
+        }
+        .auto-style11 {
+            background-color: #FFCC66;
+        }
+    </style>
+    </head>
+<body>
+
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="159px" ImageUrl="~/image/treble.jpg" Width="159px" />
+                </td>
+                <td class="auto-style2"><center class="auto-style3">RK Conservatoire</center></td>
+                <td>
+                    <asp:Image ID="Image2" runat="server" Height="159px" ImageUrl="~/image/bass.png" Width="166px" />
+                </td>
+            </tr>
+        </table>
+        <table class="auto-style8">
+            <tr>
+                <td class="auto-style7">
+                    <strong>
+                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style9"><Center>Home</Center></asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style5">
+                    <strong>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/login.aspx"><Center>Login</Center></asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style6">
+                    <strong>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/registration2.aspx"><Center>Register</Center></asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style10">
+                    <strong>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/TeacherLogin.aspx"><Center>Teachers Login</Center></asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style11">
+                    <strong>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/instruments.aspx"><Center>Instruments</Center></asp:HyperLink>
+                    </strong>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+        </asp:ContentPlaceHolder>
+    </form>
+
+    </body>
+</html>
